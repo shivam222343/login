@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "poppins", sans-serif;
+}
+body{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    background: url('bg.jpg') no-repeat ;
+    background-position: center;
+}
+
+h1{
+    justify-content: center;
+    color: aqua;
+    text-align: center;
+    margin-bottom:30px ;
+}
+
+.container{
+    width: 335px;
+    height: 335px;
+    background-color: transparent;
+    text-decoration: wrap;
+    align-items: center;
+    align-content: center;
+    padding: 10px  20px;
+    backdrop-filter: blur(5px);
+    border: 2px solid aqua;
+    box-shadow: 2px solid black;
+    box-shadow: 0 0 10px solid aqua;
+}
+
+.email{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    
+}
+.pass{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    
+}
+.email input{
+    text-decoration: none;
+    font-size: 20px;
+    display: inline;
+    max-width: 80%;
+    max-height: 60%;
+    background-color: transparent;
+    border: 2px solid aqua; 
+}
+.email input::placeholder{
+    color: white;
+}
+
+
+ion-icon{
+    font-size: 30px;
+    margin-top: 6px;
+    margin-left: 5px;
+    color: aqua;
+    shadow: 0 0 5px aqua;
+}
+
+.pass input{
+    text-decoration: none;
+    font-size: 20px;
+    display: inline;
+    max-width: 80%;
+    max-height: 60%;
+    background-color: transparent;
+    border: 2px solid aqua;
+}
+
+.remember-forgot{
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+}
+.remember
+{
+    display: flex;
+}
+
+.remember input{
+    font-size: 15px;
+}
+
+.remember h2{
+    margin-left:5px;
+    color: white;
+    text-shadow:  0 0 5px aqua;
+}
+.Forgot a{
+    text-decoration: none;
+    color: white;
+    text-shadow:  0 0 5px aqua;
+}
+
+.noAccount-Create{
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+}
+.noAccount{
+    color: white;
+    text-shadow:  0 0 5px aqua;
+}
+.Create a{
+    text-decoration: none;
+    color: white;
+    text-shadow:  0 0 5px aqua;
+}
+
+.btn{
+    height: 40px;
+    width: 150px;
+    background-color: aqua;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 25%;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn h2{
+    background-color: transparent;
+    border: 0px;
+}
+
+
+/* Hover Section */
+.btn:hover {
+    background-color: red;
+    color: white;
+}
+
+.container:hover{
+    border: 2px solid red;
+    box-shadow: linear-gradient(red);
+    background-color: rgba(255, 0, 0, 0.285);
+}
+
+.email input:hover{
+    border: 2px solid red;
+}
+.pass input:hover{
+    border: 2px solid red;
+}
+.Forgot a:hover{
+    color: aqua;
+    text-shadow: 0 0 10px red;
+}
+
+.Create a:hover{
+    color: aqua;
+    text-shadow: 0 0 10px red;
+}
+
+h1:hover{
+      color: red;
+}
