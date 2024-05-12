@@ -58,7 +58,9 @@ h1{
 .email input::placeholder{
     color: white;
 }
-
+.pass input::placeholder{
+    color: white;
+}
 
 ion-icon{
     font-size: 30px;
