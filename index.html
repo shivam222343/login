@@ -1,74 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Weather App</title>
-  <link rel="stylesheet" href="weather.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createAcc</title>
+    <link rel="stylesheet" href="createAcc.css">
 </head>
+
 <body>
-  <form name="submit-to-google-sheet">
-  <div class="container">
-    <div class="headline">
-    <h1>LOGIN HERE</h1>
-    
-  </div>
+    <form name="submit-to-google-sheet">
+    <div class="container">
+        <div class="back">
+            <a href="http://127.0.0.1:5500/index.html"><ion-icon  name="play-back-outline"></ion-icon></a>
+        </div>
+        <div class="headline">
+            <h1>SignUp Here</h1>
+        </div>
+        <div class="text">
+            <input name="FName" type="text" placeholder="First Name" required>
+        </div>
+        <div class="text">
+            <input name="MName" type="text" placeholder="Middle Name" required>
+
+        </div>
+        <div class="text">
+            <input name="LName" type="text" placeholder="Last Name" required>
+
+        </div>
         <div class="email">
-      <input name="Email" type="email" placeholder="Email" required>
-      <ion-icon name="chatbox-outline"></ion-icon>
-      
+            <input name="Email" type="email" placeholder="Enter Email" required>
+            <ion-icon name="chatbox-outline"></ion-icon>
+        </div>
+        <div class="pass">
+            <input name="Password" type="password" placeholder="Enter Password" required>
+            <ion-icon name="finger-print-outline"></ion-icon>
+        </div>
+        <div class="pass">
+            <input type="password" placeholder="Confirm Password" required>
+            <ion-icon name="finger-print-outline"></ion-icon>
+        </div>
+        <div class="btn" type="submit">
+           <button >Send</button>
+           <a href="http://127.0.0.1:5500/index.html"><span id="msg2"></span></a>
+          </div>
+          
     </div>
-    <div class="pass">
-      <input name="Password" type="password" placeholder="Enter Password" required>
-      <ion-icon name="finger-print-outline"></ion-icon>
-    </div>
-    <div class="remember-forgot">
-      <div class="remember">
-        <input type="checkbox" required>
-        <h2>Remeber Me</h2>
-      </div>
-      <div class="Forgot">
-        <a href="#"><h2>Forgot Password</h2>
-        </a>
-      </div>
-    </div>
-    <div class="btn">
-      <button type="submit">Send</button>
-    </div>
-      <div class="noAccount-Create">
-        <div class="noAccount">
-        <h2>You dont have any Account ?</h2>
-      </div>
-      <div class="Create">
-        <a href="http://127.0.0.1:5500/createAcc.html"><h2>Create Acount</h2></a>
-      </div>
-      
-    </div>
-</div>
-<span id="msg"></span>
+    <span id="msg"></span>
 </form>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwl7p_M7PPkTmNjmknjuUgKRmTQ9BAi5BmQym3mXT6AMDXoGQHfiGwLdNFhzUB7sW_m/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-               msg.innerHTML = 'You Login Successfully .....'
-               setTimeout(function(){
-                msg.innerHTML = ""},(2000)
-        )
-        from.reset()}
-       )
-       
-              })
-        .catch(error => console.error('Error!', error.message))
-    
-  </script>
+   
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyaEzP9DAQ6WLTEZ1DEJYYjovrJ_CLIznFWiZs6AFgtvUr-N5M5N7CmBcdPY5Vq5RBwVg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                   msg.innerHTML = 'You SignUp Successfully .....'
+                   setTimeout(function(){
+                    msg.innerHTML = ""},(2000)
+                    
+            )
+            msg2.innerHTML = 'Click for Login'
+           
+            from.reset()}
+           )
+           
+                  })
+            .catch(error => console.error('Error!', error.message))
+        
+      </script>
 </body>
 
 </html>
