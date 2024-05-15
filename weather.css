@@ -3,13 +3,15 @@
     padding:0;
     font-family: "poppins", sans-serif;
 }
+
+
 body{
-   display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     min-height: 100vh;
-    background: url('bg.jpg') no-repeat ;
+    background: url('BG.jpg') no-repeat ;
     background-position: center;
 }
 
@@ -23,6 +25,7 @@ h1{
 .container{
     width: 335px;
     height: 335px;
+    display: block;
     background-color: transparent;
     text-decoration: wrap;
     align-items: center;
@@ -32,6 +35,7 @@ h1{
     border: 2px solid aqua;
     box-shadow: 2px solid black;
     box-shadow: 0 0 10px solid aqua;
+
 }
 
 .email{
@@ -57,6 +61,7 @@ h1{
 }
 .email input::placeholder{
     color: white;
+    background-color: transparent;
 }
 .pass input::placeholder{
     color: white;
@@ -119,31 +124,44 @@ ion-icon{
     color: white;
     text-shadow:  0 0 5px aqua;
 }
-
 .btn{
-    height: 40px;
-    width: 150px;
-    background-color: aqua;
     display: flex;
-    text-align: center;
-    justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    margin-left: 25%;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
 }
-.btn h2{
+
+
+.btn button{
     background-color: transparent;
     border: 0px;
+    font-size: 20px;
+    background-color: aqua;
+    height: 30px;
+    width: 100px;
+    margin-top: 20px;
 }
+#msg{
+    color: rgb(0, 255, 21);
+    margin-top: 20px;
+    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: "poppins", sans-serif;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+    
 
 
 /* Hover Section */
-.btn:hover {
+.btn button:hover {
     background-color: red;
     color: white;
+    
 }
 
 .container:hover{
@@ -170,4 +188,8 @@ ion-icon{
 
 h1:hover{
       color: red;
+      background-color: aqua;
+      border-radius: 5px;
 }
+
+
