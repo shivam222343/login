@@ -112,7 +112,7 @@ ion-icon{
 }
 
 .noAccount-Create{
-    display: flex;
+    display: bock;
     font-size: 10px;
     justify-content: space-between;
 }
